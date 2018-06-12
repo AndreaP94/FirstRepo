@@ -27,6 +27,7 @@ public class MeanWordCountCombiner {
 				Text outputKey = new Text(word.toUpperCase().trim());
 				LongWritable outputValue = new LongWritable(1);
 				context.write(outputKey, outputValue);
+				System.err.println("éPriolo");
 			}
 		}
 	}
